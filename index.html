@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lolita Photographies</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Carousel -->
+    <link rel="stylesheet" href="js/simpleslider/css/style.css">
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/simpleslider/js/index.js"></script>
+</head>
+
+<body>
+    <nav id="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#portifolio">Portifólio</a></li>
+            <li><a href="#about">A Artista</a></li>
+            <li><a href="#molduraria">Molduraria</a></li>
+            <li><a href="#revelesuasfotos">Revele suas fotos</a></li>
+            <li><a href="#contatos">Contatos</a></li>
+        </ul>
+    </nav>
+    <section id="first">
+        <header>
+            <section class="content">
+                <!--<div class="logo"></div>-->
+            </section>
+        </header>
+    </section>
+    <!--FINAL HOME PAGE-->
+    <!--INICIO PORTIFOLIO-->
+    <section id="portifolio">
+        <a href="img/1.jpg" rel="Shadowbox">
+            <section class="photo"></section>
+        </a>
+        <section class="photo2"></section>
+        <section class="photo3"></section>
+        <section class="photo4"></section>
+        <section class="photo5"></section>
+    </section>
+    <section id="about">
+        <h1>Alexandra Santana</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non temporibus, ipsum quae possimus sed officia. Et, ullam. Dolorem voluptate sapiente praesentium, illum facilis, tempore aspernatur nam, libero perspiciatis architecto ea!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla alias deserunt, quisquam soluta, corporis iure nisi ducimus harum ad officiis porro laborum similique cumque illum repellendus, accusamus nostrum repellat suscipit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam architecto, libero sit esse est, nemo, nam reprehenderit odit, dolores temporibus laudantium cumque atque hic tempore magni. Inventore voluptatibus, officiis delectus!</p>
+    </section>
+    <section id="molduraria">
+        <h1>Molduraria</h1>
+
+        <section class="right" style="margin-top:40px;">
+            <h2>Escolha uma das molduras disponiveis:</h2>
+            <section class="escolha">
+                <iframe src="js/simpleslider/index.html" width="340" height="340" frameborder="0"></iframe>
+            </section>
+
+    </section>
+    <!--Script Menu-->
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        function myFunction() {
+            if (document.body.scrollTop > 610 || document.documentElement.scrollTop > 610) {
+                document.getElementById("nav").className = "nav-fixa";
+            } else {
+                document.getElementById("nav").className = "nav";
+            }
+        }
+    </script>
+    <!--Final Menu-->
+</body>
+
+</html>
